@@ -1,0 +1,33 @@
+<div class="container">
+  <form [formGroup]="register" (ngSubmit)="submit()">
+    <h1>Admission Form</h1>
+
+    <label for="email">
+      <b>Name</b>
+    </label>
+    <input  class="form-control" placeholder="Enter Email" formControlName="firstname">
+    <p *ngIf="register.get('firstname').hasError('required') && register.get('firstname').touched">enter firstname.</p>
+
+    <label for="psw">
+      <b>Last Name</b>
+    </label>
+    <input  class="form-control" placeholder="Enter Password" formControlName="lastname">
+
+    <label for="psw">
+      <b>Class</b>
+    </label>
+    <input  class="form-control" placeholder="I-X" formControlName="class">
+
+    <label for="psw">
+      <b>Year of passing</b>
+    </label>
+    <input  class="form-control" placeholder="2017*" formControlName="year">
+
+    <label for="psw">
+      <b>Percentage of marks</b>
+    </label>
+    <input class="form-control" placeholder="%" formControlName="percentage">
+
+    <button [disabled]="register.invalid" class="btn btn-success">Register</button>
+  </form>
+</div>
