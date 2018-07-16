@@ -10,7 +10,7 @@ export class TableComponent implements OnInit {
 
   constructor(private tableService: TableService) { }
   userData: any;
-  totalMarks: Number ;
+  totalMarks: Number;
   topper: any;
   ngOnInit() {
     this.userSearch();
