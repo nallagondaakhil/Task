@@ -2,31 +2,35 @@
   <form [formGroup]="register" (ngSubmit)="submit()">
     <h1>Admission Form</h1>
 
-    <label for="email">
+    <label for="name">
       <b>Name</b>
     </label>
-    <input  class="form-control" placeholder="Enter Email" formControlName="firstname">
+    <input  class="form-control" placeholder="Enter Name" formControlName="firstname">
     <p *ngIf="register.get('firstname').hasError('required') && register.get('firstname').touched">enter firstname.</p>
 
-    <label for="psw">
+    <label for="name">
       <b>Last Name</b>
     </label>
-    <input  class="form-control" placeholder="Enter Password" formControlName="lastname">
+    <input  class="form-control" placeholder="Enter Name" formControlName="lastname">
+    <p *ngIf="register.get('lastname').hasError('required') && register.get('lastname').touched">enter lasstname.</p>
 
-    <label for="psw">
+    <label for="name">
       <b>Class</b>
     </label>
     <input  class="form-control" placeholder="I-X" formControlName="class">
+    <p *ngIf="register.get('class').hasError('required') && register.get('class').touched">enter class.</p>
 
-    <label for="psw">
+    <label for="name">
       <b>Year of passing</b>
     </label>
     <input  class="form-control" placeholder="2017*" formControlName="year">
+    <p *ngIf="register.get('year').hasError('required') && register.get('year').touched">enter year of passedout.</p>
 
-    <label for="psw">
+    <label for="name">
       <b>Percentage of marks</b>
     </label>
     <input class="form-control" placeholder="%" formControlName="percentage">
+    <p *ngIf="register.get('percentage').hasError('required') && register.get('percentage').touched">enter your percentage.</p>
 
     <button [disabled]="register.invalid" class="btn btn-success">Register</button>
   </form>
