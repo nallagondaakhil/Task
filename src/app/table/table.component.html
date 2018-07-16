@@ -1,22 +1,22 @@
-<div class="container-fluid ">
-<table>
-  <thead>
-        <tr>
-             <th style="font-weight: bold;font-family: sans-serif;">Student Result Board</th>
-        </tr>
-      <tr class="table">
-          <th>Student Name</th>
-          <th>Roll Number</th>
-          <th>Total Marks</th>
-          <th>Status</th>
+<div class="container-fluid">
+  <table>
+    <thead>
+      <tr>
+        <th style="font-weight: bold;font-family: sans-serif;">Student Result Board</th>
       </tr>
-  </thead>
-  <tbody>
-      <tr *ngFor="let item of userData" style="cursor:pointer"  class="table" [ngClass]="{'fail' : item.status == 'Failed', 'pass': item.totalMarks == topper }">
-          <td>{{item.name}}</td>
-          <td>{{item.rollNumber}}</td>
-          <td>{{item.totalMarks}}</td>
-          <td>{{item.status}}</td>
-  </tbody>
-</table>
+      <tr class="table">
+        <th>Student Name</th>
+        <th>Roll Number</th>
+        <th>Total Marks</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of userData" style="cursor:pointer" class="table" [ngClass]="{'fail' : item.status == 'Failed', 'pass': item.totalMarks == topper }">
+        <td>{{item.name}}</td>
+        <td>{{item.rollNumber}}</td>
+        <td>{{item.totalMarks}}</td>
+        <td>{{item.status}}</td>
+    </tbody>
+  </table>
 </div>
