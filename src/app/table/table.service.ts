@@ -1,8 +1,6 @@
-import { Router, ActivatedRoute, NavigationExtras } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Http, Response, RequestMethod, RequestOptions, Headers } from '@angular/http';
 
 @Injectable()
 export class TableService {

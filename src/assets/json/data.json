@@ -13,9 +13,9 @@
     {
         "name":"asish",
         "marks":{
-            "Maths":"12",
-            "English":"31",
-            "Science":"40"
+            "Maths":"18",
+            "English":"21",
+            "Science":"45"
         },
         "rollNumber":"KV2017-5A5"
     },
@@ -31,9 +31,9 @@
     {
         "name":"rajiv",
         "marks":{
-            "Maths":"18",
-            "English":"21",
-            "Science":"45"
+            "Maths":"12",
+            "English":"31",
+            "Science":"40"
         },
         "rollNumber":"KV2017-5A2"
     },
