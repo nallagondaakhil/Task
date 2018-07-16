@@ -31,10 +31,6 @@ export class TableComponent implements OnInit {
     let i = 0;
     console.log(temp)
     while(i<=temp.length-1){
-        //   for (var key in this.userData[i].marks) {
-        //     this.totalMarks += this.totalMarks + this.userData[i].marks[key]
-        //       console.log(this.totalMarks)
-        // }
         if(temp[i].name == this.userData[i].name){
           let totalMarks:any = 0
           for (var key in temp[i].marks) {
